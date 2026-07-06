@@ -1,4 +1,4 @@
-# SQL database performance test
+# SQL DATABASE PERFORMACE TEST
 
 This is my test of relational database performance with PostgreSQL. A database named db_kevin_gonzalez_cayena is created, and the following tables are created:
 - City
@@ -8,7 +8,7 @@ This is my test of relational database performance with PostgreSQL. A database n
 - Equipment
 - WorkOrder
 
-## command sql
+## SQL COMMAND
 
 - create database db_kevin_gonzalez_cayena
 ```text
@@ -18,4 +18,48 @@ CREATE TABLE client
 CREATE TABLE Technician 
 CREATE TABLE Equipment
 CREATE TABLE WorkOrder
+```
+
+## SQL ATTRIBUTE
+
+- city table
+```text
+    id_city SERIAL PRIMARY KEY,
+    name_city VARCHAR(50) NOT NULL UNIQUE
+
+```
+- branch table
+```text
+    id_branch SERIAL PRIMARY KEY,
+    name_branch VARCHAR(50) NOT NULL UNIQUE
+```
+- client table
+```text
+  id_client SERIAL PRIMARY KEY,
+    fullname VARCHAR(100) NOT NULL,
+    id_city INT NOT NULL,
+    id_branch INT NOT NULL
+```
+- technician table
+```text
+    id_technician SERIAL PRIMARY KEY,
+    fullname VARCHAR(100) NOT NULL,
+    tel_technician VARCHAR(20)
+```
+- equipament table
+```text
+    id_equipment SERIAL PRIMARY KEY,
+    name_equipament VARCHAR(100) NOT NULL,
+    EquipmentCategory VARCHAR(50) NOT NULL 
+```
+- WorkOrder table
+```text
+        work_order VARCHAR(10) PRIMARY KEY,
+    date_service DATE NOT NULL,
+    service_type VARCHAR(50) NOT NULL,
+    hours_service INT NOT NULL,
+    cost_service INT NOT NULL,
+    id_client INT NOT NULL,      
+    id_technician INT NOT NULL,  
+    id_equipment INT NOT NULL
 ```
