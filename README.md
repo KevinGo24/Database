@@ -7,3 +7,15 @@ This is my test of relational database performance with PostgreSQL. A database n
 - Technician
 - Equipment
 - WorkOrder
+
+## command sql
+
+- create database db_kevin_gonzalez_cayena
+```text
+CREATE TABLE city 
+CREATE TABLE branch 
+CREATE TABLE client
+CREATE TABLE Technician 
+CREATE TABLE Equipment
+CREATE TABLE WorkOrder
+```
