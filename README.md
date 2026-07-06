@@ -63,3 +63,26 @@ CREATE TABLE WorkOrder
     id_technician INT NOT NULL,  
     id_equipment INT NOT NULL
 ```
+
+## PRIMARY KEY & FOREIGN KEY
+
+### TABLE PRIMARY KEY
+
+- city table
+- brachm table
+- client table
+- technician table
+
+### FOREIGN KEY
+
+- client table
+```text
+    FOREIGN KEY (id_city) REFERENCES city(id_city),
+    FOREIGN KEY (id_branch) REFERENCES branch(id_branch)
+```
+- WorkOrder table
+```text
+   FOREIGN KEY (id_client) REFERENCES client(id_client),
+    FOREIGN KEY (id_technician) REFERENCES Technician(id_technician),
+    FOREIGN KEY (id_equipment) REFERENCES Equipment(id_equipment)
+```
