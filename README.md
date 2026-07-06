@@ -103,3 +103,19 @@ is a unique identifier of a table
 ## FOREIGN KEY
 
 column or set of columns in a table that is linked to the primary key of another table.
+
+## BEGIN TRANSACTION
+
+to make transactions
+
+## COMMIT TRANSACTION
+
+to assemby transactions
+
+## delete where
+
+to delete register
+
+## UPDATE WHERE
+
+update register
