@@ -1,6 +1,4 @@
-# PICTURE POSTGREESSQL
-[POSTGRES](https://www.comparasoftware.co/postgresql)
-
+![POSTGREESSQL](image-1.png)
 # SQL DATABASE PERFORMACE TEST
 
 This is my test of relational database performance with PostgreSQL. A database named db_kevin_gonzalez_cayena is created, and the following tables are created:
