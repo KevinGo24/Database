@@ -20,7 +20,7 @@ CREATE TABLE Equipment
 CREATE TABLE WorkOrder
 ```
 
-## SQL ATTRIBUTE
+## SQL ATTRIBUTE $ FIELDS
 
 - city table
 ```text
@@ -68,10 +68,10 @@ CREATE TABLE WorkOrder
 
 ### TABLE PRIMARY KEY
 
-- city table
-- brachm table
-- client table
-- technician table
+- city table (id_city SERIAL PRIMARY KEY)
+- brachm table (id_branch SERIAL PRIMARY KEY)
+- client table (id_client SERIAL PRIMARY KEY,)
+- technician table (id_technician SERIAL PRIMARY KEY)
 
 ### FOREIGN KEY
 
@@ -86,3 +86,19 @@ CREATE TABLE WorkOrder
     FOREIGN KEY (id_technician) REFERENCES Technician(id_technician),
     FOREIGN KEY (id_equipment) REFERENCES Equipment(id_equipment)
 ```
+
+## NOT NULL
+
+It does not allow sending empty fields
+
+## UNIQUE
+
+The UNIQUE constraint in SQL guarantees that all values ​​in a column or set of columns are different.
+
+## PRIMARY KEY
+
+is a unique identifier of a table
+
+## FOREIGN KEY
+
+column or set of columns in a table that is linked to the primary key of another table.
