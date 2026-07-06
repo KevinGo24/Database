@@ -1,3 +1,6 @@
+# PICTURE POSTGREESSQL
+[POSTGRES](https://www.comparasoftware.co/postgresql)
+
 # SQL DATABASE PERFORMACE TEST
 
 This is my test of relational database performance with PostgreSQL. A database named db_kevin_gonzalez_cayena is created, and the following tables are created:
@@ -64,7 +67,7 @@ CREATE TABLE WorkOrder
     id_equipment INT NOT NULL
 ```
 
-## PRIMARY KEY & FOREIGN KEY
+## PRIMARY KEY AND FOREIGN KEY
 
 ### TABLE PRIMARY KEY
 
